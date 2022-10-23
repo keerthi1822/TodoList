@@ -1,0 +1,36 @@
+.unordered-list{
+margin:2% auto ;
+
+width: 30%;
+}
+
+.list-item{
+margin:2% auto ;
+list-style: none;
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color: aqua;
+}
+
+.label-input{
+margin: auto 0;
+}
+
+.edit-btn, .complete-btn , .delete-btn{
+    margin:5px;
+    background-color: white;
+    border: none;
+}
+.edit-btn{
+    color: rgb(29, 140, 108);
+}
+.complete-btn {
+  color: blue;
+}
+.delete-btn {
+   color: red;
+}
+.noitems{
+    background-color: white;
+}
