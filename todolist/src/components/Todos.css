@@ -10,7 +10,7 @@ list-style: none;
 display: flex;
 justify-content: space-between;
 align-items: center;
-background-color: aqua;
+background-color: rgb(212, 213, 254);
 }
 
 .label-input{

@@ -2,3 +2,12 @@
     display:flex;
     justify-content: center;
 }
+
+.input-form div *{
+   outline-style:none;
+}
+
+
+.btn-add {
+    background-color: lightpink;
+}

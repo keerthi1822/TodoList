@@ -23,7 +23,7 @@ const TodoInput = ({handleAdd,onInputchange,todoItem}:props) => {
             </div>
 
             <div>
-                <button onClick={handleAdd}>ADD</button>
+                <button disabled={!todoItem} onClick={handleAdd} className='btn-add'>ADD</button>
             </div>
         </div>
     )

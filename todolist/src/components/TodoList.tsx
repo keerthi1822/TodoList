@@ -1,4 +1,7 @@
+import { url } from 'inspector';
 import React, { ChangeEvent, useState } from 'react'
+
+
 import TodoInput from "./TodoInput";
 import Todos from "./Todos";
 
@@ -37,12 +40,12 @@ const TodoList: React.FC = () => {
         }
         setTodoList(newTodoItems);
     }
-
+  
     const toggleTodo = (selectedTodo: ITodo) => {
 
         const newTodos = todoList.map((todo) => {
 
-            if (todo.completed === selectedTodo.completed) {
+            if (todo.todo === selectedTodo.todo) {
                 return {
                     ...todo,
                     completed: !todo.completed,

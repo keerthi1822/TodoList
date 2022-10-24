@@ -7,8 +7,11 @@ const Todos = ({ todoList, handleEdit, toggleTodo, handleDelete }: handleprops) 
 
   return (
     <ul className='unordered-list'>
+    
       {todoList.length
-        ? todoList.map((todo:ITodo, i: number) =>
+        ? <>
+        <li key={0} style={{textAlign:'center',backgroundColor:'lightpink',listStyle:'none',color:'white'}}>Task</li>
+        {todoList.map((todo:ITodo, i: number) =>
           <li key={`todo${i}`} className="list-item">
             <label className='label-input'
               style={{ textDecoration: todo.completed ? 'line-through' : undefined }}
@@ -27,8 +30,8 @@ const Todos = ({ todoList, handleEdit, toggleTodo, handleDelete }: handleprops) 
 
 
           </li>
-        )
-        : <p className='noitems'> Add items.</p>
+        )}</>
+        : <p className='noitems'> Add items to see the list.</p>
         }
 
     </ul>
